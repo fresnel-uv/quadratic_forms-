@@ -1,0 +1,89 @@
+# Diophantine-Pell Triple Generator
+
+This program computes integer triples \((X, Y, Z)\) that arise from a coupled Diophantine–Pell system:
+
+- **Generalized Diophantine equation**  
+  \[
+  x^{2}+z\,y^{2}=n,\qquad n\in\mathbb{N}
+  \]
+
+- **Modified Pell equations**  
+  \[
+  a^{2}-2b^{2}=z,\qquad\;
+  u^{2}-2v^{2}=-2
+  \]
+
+The minimal positive solutions \((a,b)\) and \((u,v)\) seed an iteration  
+\[
+(u_{k+1},v_{k+1})=T\,(u_{k},v_{k}),\qquad 
+T=\begin{bmatrix}3&4\\[2pt]2&3\end{bmatrix},
+\]
+and each pair \((u_k,v_k)\) transforms every \((x,y,n)\) into
+\[
+\begin{aligned}
+X &= y\bigl(bu_k+av_k\bigr)+x,\\
+Y &= y\bigl(bu_k+av_k\bigr)-x,\\
+Z &= y\bigl(2bv_k+au_k\bigr).
+\end{aligned}
+\]
+
+---
+
+## ✨ Features
+
+- Enumerates up to `max_solutions_per_n` solutions for \(x^{2}+z\,y^{2}=n\) with \(1\le n\le\) `max_n`.
+- Finds **minimal fundamental** Pell solutions automatically.
+- Generates any number of Pell iterations (`iterations`).
+- Deduplicates and sorts output; hides the index for clean display.
+
+---
+
+## 🔧 Installation
+
+```bash
+pip install sympy pandas IPython
+```
+
+---
+
+## 🚀 Quick Start (Jupyter / IPython)
+
+```python
+from solver import interactive_run   # or main(), if you prefer hard-coded defaults
+interactive_run()
+```
+
+You will be prompted for:
+
+| Prompt | Meaning |
+|--------|---------|
+| **z** | Coefficient in \(x^{2}+z\,y^{2}=n\) |
+| **max_n** | Upper bound for \(n\) search |
+| **max_solutions_per_n** | Solutions retained per \(n\) |
+| **iterations** | Times to apply matrix \(T\) |
+
+Results appear in a table like:
+
+| x | y | n | (u,v) = (5,4) | (u,v) = (29,20) |
+|---|---|----|--------------|-----------------|
+| 1 | 0 | 1  | ( … )        | ( … )           |
+
+(Tuples are \((X, Y, Z)\); index column is hidden.)
+
+---
+
+## 📂 Key Files
+
+| File / Class | Role |
+|--------------|------|
+| **DiophantineSolver** | Generates \((x,y,n)\) solutions |
+| **PellSolver**        | Finds minimal positive \((a,b)\) and \((u,v)\) |
+| **run_full_solver**   | Orchestrates solvers, iterations, and triple generation |
+| **interactive_run**   | CLI-style prompt & pretty display |
+| **display_results**   | Deduplicates, sorts, hides index |
+
+---
+
+## 📝 License
+
+MIT — free to use, modify, and distribute for research or educational purposes.
