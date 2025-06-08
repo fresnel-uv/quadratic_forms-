@@ -11,23 +11,10 @@ This program computes integer triples $(X, Y, Z)(a,b,x_i,y_i, u_n, v_n)$ defined
   $a^{2}-2b^{2}=z$ and $u^{2}-2v^{2}=-2$
 
 - **Automorphism of $\mathbb{Z}(\sqrt{2}}**  
-  $T \cdot g = (au+ 2bv, av+ bu)$
+  $(a_n, b_n) = T \cdot g = (au+ 2bv, av+ bu)$
 
-The minimal positive solutions \((a,b)\) and \((u,v)\) seed an iteration  
-\[
-(u_{k+1},v_{k+1})=T\,(u_{k},v_{k}),\qquad 
-T=\begin{bmatrix}3&4\\[2pt]2&3\end{bmatrix},
-\]
-and each pair \((u_k,v_k)\) transforms every \((x,y,n)\) into
-\[
-\begin{aligned}
-X &= y\bigl(bu_k+av_k\bigr)+x,\\
-Y &= y\bigl(bu_k+av_k\bigr)-x,\\
-Z &= y\bigl(2bv_k+au_k\bigr).
-\end{aligned}
-\]
-
----
+where $(a_0, b_0)$ is a fixed solution and $(u_n, v_n)$ is defined by the recurrence solution. 
+---------------------------------------------------------------------------------------------
 
 ## ✨ Features
 
