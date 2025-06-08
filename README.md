@@ -10,8 +10,8 @@ This program computes integer triples $(X, Y, Z)(a,b,x_i,y_i, u_n, v_n)$ defined
 - **Modified Pell equations**  
   $a^{2}-2b^{2}=z$ and $u^{2}-2v^{2}=-2$
 
-- **Automorphism of $\mathbb{Z}(\sqrt{2}}**  
-  $(a_n, b_n) = T \cdot g = (au+ 2bv, av+ bu)$
+- **Automorphism of $\mathbb{Z}(\sqrt{2})$**  
+  $(a_n, b_n) = T \cdot g = (au_{n-1}+ 2bv_{n-1}, av_{n-1}+ bu_{n-1})$
 
 where $(a_0, b_0)$ is a fixed solution and $(u_n, v_n)$ is defined by the recurrence solution. 
 ---------------------------------------------------------------------------------------------
