@@ -10,6 +10,9 @@ This program computes integer triples $(X, Y, Z)(a,b,x_i,y_i, u_n, v_n)$ defined
 - **Modified Pell equations**  
   $a^{2}-2b^{2}=z$ and $u^{2}-2v^{2}=-2$
 
+- **Automorphism of $\mathbb{Z}(\sqrt{2}}**  
+  $T \cdot g = (au+ 2bv, av+ bu)$
+
 The minimal positive solutions \((a,b)\) and \((u,v)\) seed an iteration  
 \[
 (u_{k+1},v_{k+1})=T\,(u_{k},v_{k}),\qquad 
