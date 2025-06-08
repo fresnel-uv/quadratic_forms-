@@ -8,7 +8,7 @@ This program computes integer triples $((X, Y, Z)\)(a,b,x_i,y_i, u_n, v_n)$ defi
   $x^{2}+zy^{2}=n,\qquad n\in\mathbb{N}$
 
 - **Modified Pell equations**  
-  $ a^{2}-2b^{2}=z,\\ u^{2}-2v^{2}=-2 $
+  $ a^{2}-2b^{2}=z, u^{2}-2v^{2}=-2 $
 
 The minimal positive solutions \((a,b)\) and \((u,v)\) seed an iteration  
 \[
