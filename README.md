@@ -1,4 +1,4 @@
-## These programs are implementations of the results provided in the research article available in https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5268380. 
+## These programs are implementations of the results provided in the research article available in **[On solutions of Diophantine equation $x^2 + y^2 = z^2 + n$ where $x-y = d$ and some associated quadratic forms.](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5268380)**
 
 # Diophantine equation solver 
 
