@@ -2,7 +2,7 @@
 
 # Diophantine equation solver 
 
-This program computes integer triples $((X, Y, Z)\)(a,b,x_i,y_i, u_n, v_n)$ defined in the respective theorems and their associated Pell and quadratic Diophantine equations. 
+This program computes integer triples $(X, Y, Z)(a,b,x_i,y_i, u_n, v_n)$ defined in the respective theorems and their associated Pell and quadratic Diophantine equations. 
 
 - **Generalized Diophantine equation**  
   $x^{2}+zy^{2}=n,\qquad n\in\mathbb{N}$
