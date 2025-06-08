@@ -1,6 +1,8 @@
-# Diophantine-Pell Triple Generator
+## These programs are implementations of the results provided in the research article available in https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5268380. 
 
-This program computes integer triples \((X, Y, Z)\) that arise from a coupled Diophantine–Pell system:
+# Diophantine equation solver 
+
+This program computes integer triples $((X, Y, Z)\)(a,b,x_i,y_i, u_n, v_n)$ defined in the respective theorems and their associated Pell and quadratic Diophantine equations. 
 
 - **Generalized Diophantine equation**  
   \[
